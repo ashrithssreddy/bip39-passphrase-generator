@@ -3,6 +3,7 @@ document.getElementById("copy").addEventListener("click", copyToClipboard);
 
 function generatePassphrase() {
     const wordCount = parseInt(document.getElementById("wordCount").value, 10);
+    const separator = document.getElementById("separator").value;  // Get selected separator
     let passphrase = [];
 
     for (let i = 0; i < wordCount; i++) {
@@ -10,7 +11,7 @@ function generatePassphrase() {
         passphrase.push(bip39Words[randomIndex]);
     }
 
-    document.getElementById("passphrase").textContent = passphrase.join("-");
+    document.getElementById("passphrase").textContent = passphrase.join(separator);
 }
 
 function copyToClipboard() {

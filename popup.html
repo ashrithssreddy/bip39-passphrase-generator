@@ -8,6 +8,7 @@
 </head>
 <body>
     <h2>BIP39 Passphrase Generator</h2>
+
     <div>
         <label for="wordCount">Words:</label>
         <select id="wordCount">
@@ -17,6 +18,17 @@
             <option value="6">6</option>
         </select>
     </div>
+
+    <div>
+        <label for="separator">Separator:</label>
+        <select id="separator">
+            <option value="-" selected>- (hyphen)</option>
+            <option value="_">_ (underscore)</option>
+            <option value=".">. (dot)</option>
+            <option value=" "> (space)</option>
+        </select>
+    </div>
+
     <button id="generate">Generate Passphrase</button>
     <p id="passphrase"></p>
     <button id="copy">Copy</button>
