@@ -1,55 +1,76 @@
-/* Dark Theme */
+/* Spotify-Themed Dark Mode */
 body {
     font-family: Arial, sans-serif;
     width: 250px;
     text-align: center;
     padding: 10px;
-    background-color: #1e1e1e;  /* Dark background */
-    color: #ffffff;  /* White text */
+    background-color: #191414;  /* Spotify Black */
+    color: #FFFFFF;  /* Spotify White */
 }
 
+/* Move header up slightly */
 h2 {
-    font-size: 1.8em;  /* Increased size */
+    font-size: 1.8em;
     font-weight: bold;
+    margin-top: -5px; /* Moves header slightly higher */
+    margin-bottom: 15px; /* Keeps good spacing below */
+}
+
+/* Words & Sep in a single row with better spacing */
+.inline-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 10px;
 }
 
-button {
-    margin-top: 10px;
-    padding: 8px 12px;
-    cursor: pointer;
+/* Make "Words" and "Sep" labels bigger */
+.inline-controls label {
+    font-size: 1em; /* Increased size */
+    font-weight: bold;
+    flex: 1;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.inline-controls select {
+    flex: 1;
     background-color: #333;
     color: white;
     border: 1px solid #555;
+    padding: 6px; /* Slightly bigger padding for better touch */
+    font-size: 1em; /* Increased font size */
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    margin-top: 10px;
+    padding: 10px 14px;
+    cursor: pointer;
+    background-color: #1DB954;  /* Spotify Green */
+    color: #FFFFFF;  /* White text */
+    border: none;
     border-radius: 4px;
+    font-size: 1em; /* Slightly larger for better touch */
 }
 
 button:hover {
-    background-color: #444;
+    background-color: #1AA34A;
 }
 
-select {
-    background-color: #333;
-    color: white;
-    border: 1px solid #555;
-    padding: 4px;
-}
-
-option {
-    background-color: #333;
-    color: white;
-}
-
+/* Passphrase */
 p {
-    font-size: 1.2em;
+    font-size: 1.3em; /* Slightly larger */
     font-weight: bold;
     margin: 10px 0;
     word-wrap: break-word;
-    color: #00ffcc;  /* Highlight passphrase in teal */
+    color: #1DB954;
 }
 
+/* "Copied!" Message */
 #copyMsg {
-    color: #00ffcc;
+    color: #1DB954;
     font-size: 0.9em;
     margin-top: 5px;
 }
