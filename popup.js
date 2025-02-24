@@ -10,7 +10,7 @@ function generatePassphrase() {
         passphrase.push(bip39Words[randomIndex]);
     }
 
-    document.getElementById("passphrase").textContent = passphrase.join(" ");
+    document.getElementById("passphrase").textContent = passphrase.join("-");
 }
 
 function copyToClipboard() {
